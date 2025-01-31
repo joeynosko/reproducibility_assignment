@@ -1,8 +1,11 @@
 ---
-title: "main analysis"
-author: "Joey Nosko"
-format: html
-editor: visual
+title: "Main Analysis"
+author: ""
+date: "9 February 2024"
+output: html_document
+knitr:
+  opts_knit:
+    root.dir: "/Users/ashleyfrancis/Documents/PhD - Dalhousie/Teaching/Stats - R /Stats 2024/Lab 3/reproducibility_assignment"
 ---
 
 ```{r global_options, echo=FALSE, warning=FALSE, message=FALSE, include=FALSE}
@@ -17,7 +20,7 @@ knitr::opts_chunk$set(echo=FALSE, warning=FALSE, message=FALSE, include=TRUE)
 
 # Introduction
 
-Here, we analyze a simple dataset of a Stroop experiment. Students in an introduction to psychology course completed an online Stroop task (<http://faculty.washington.edu/chudler/java/ready.html)> and named the colors in congruent trials (e.g., the word 'red' written in a red font) and in incongruent trials (e.g., the word 'red' written in a green font). The time they took to name all words was self-reported in seconds (e.g., 21.3 seconds) for both the congruent and incongruent blocks. In this analysis, we are interested in examining whether there is a Stroop effect.
+Here, we analyze a simple dataset of a Stroop experiment. Students in an introduction to psychology course completed an online Stroop task (http://faculty.washington.edu/chudler/java/ready.html) and named the colors in congruent trials (e.g., the word 'red' written in a red font) and in incongruent trials (e.g., the word 'red' written in a green font). The time they took to name all words was self-reported in seconds (e.g., 21.3 seconds) for both the congruent and incongruent blocks. In this analysis, we are interested in examining whether there is a Stroop effect.
 
 ```{r}
 # #run only once to download the data
